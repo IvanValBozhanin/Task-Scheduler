@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./img/flower-icon.png">
+  <link rel="stylesheet" href="./styles/NavMenu.css" />
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./styles/Shared.css" />
+  <link rel="stylesheet" href="./styles/ProductStock.css" />
+  <title>Edit Task</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <a href="./dashboard.html" class="logo-btn">
+        <img class="logo-btn-img" src="./img/flower-icon.png">
+      </a>
+      <div class="navUl">
+        <ul class="menuItems">
+          <li><a class="nav-link" href="./login.html">Home</a></li>
+          <li><a class="nav-link" href="#">Contact</a></li>
+          <li><a class="nav-link" href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="list-container">
+      <h1>Edit Task [Task_Name]</h1>
+      <form class="comment-form">
+        <textarea class="text-input" name="description" type="text" value={description} rows="3" cols="50"
+          placeholder="Write a short description"></textarea>
+        <input class="text-input" type="date" name="date" value="2023-02-28" min="2023-01-01" max="2050-12-31">
+        <button class="custom-btn-small" type="submit">
+          <img class="btn-img" src="./img/submit-icon.png" alt="submit-icon" />
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="navUl">
+        <ul class="menuItems">
+          <li><a class="nav-link" href="./login.html">Home</a></li>
+          <li><a class="nav-link" href="https://contacts.google.com/">Contact</a></li>
+          <li><a class="nav-link" href="https://policies.google.com/terms?hl=en-US">Terms of Services</a></li>
+          <li><a class="nav-link" href="https://policies.google.com/privacy?hl=en-US">Privacy Policy</a></li>
+          <li><a class="nav-link"
+              href="https://www.tudelft.nl/en/education/programmes/bachelors/cse/bachelor-of-computer-science-and-engineering/curriculum">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
